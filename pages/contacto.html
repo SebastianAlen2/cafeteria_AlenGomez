@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/">
+                <img class="header__logo" src="../img/logo.png" alt="LOGO">
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a class="header__link" href="/">Inicio</a></li>
+                <li><a class="header__link" href="/pages/nosotros.html">Nosotros</a></li>
+                <li><a class="header__link" href="/pages/menu.html">Menu</a></li>
+                <li><a class="header__link" href="/pages/blog.html">Blog</a></li>
+                <li><a class="header__link" href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+            <h1 class="h1__contacto">Contactanos</h1>
+
+        <div class="main__contacto--display">
+            <article class="article__ubicacion">
+
+                <div class="ubicacion__info">
+                    <h3 class="h3__ubicacion">Ubicacion</h3>
+                    <p class="p__ubicacion">Humboldt 1234, Palermo - C.A.B.A.</p>
+        
+                    <h3 class="h3__ubicacion">Horarios de atencion:</h3>
+                    <p class="p__ubicacion">Lunes a Viernes de 9 a 20, Sabados de 10 a 21</p>
+        
+                    <h3 class="h3__ubicacion">Telefono:</h3>
+                    <p class="p__ubicacion">1234-5678</p>
+        
+                    <h3 class="h3__ubicacion">Whatsapp:</h3>
+                    <p class="p__ubicacion">1234-567890</p>
+        
+                    <h3 class="h3__ubicacion">Email:</h3>
+                    <p class="p__ubicacion">correo@correo.com</p>
+                </div>
+                
+
+                <ul>
+                    <li><a href="https://es-la.facebook.com/"><img class="footer__facebook footer__redes--filter" src="../img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es-la"><img class="footer__instagram footer__redes--filter" src="../img/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.whatsapp.com/?lang=es"><img class="footer__whatsapp footer__redes--filter" src="../img/whatsapp.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="footer__youtube footer__redes--filter" src="../img/youtube.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/feed/"><img class="footer__linkedin footer__redes--filter"src="../img/linkedin.png" alt="linkedin"></a></li>
+                </ul>
+
+                <iframe class="mapa__ubicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13135.821856422823!2d-58.396447122058085!3d-34.605287666037235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1646439750555!5m2!1ses!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+
+            <article class="contenedor__formulario">
+                    <h2 class="h2__formulario">Dejanos tu consulta</h2>
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                        
+                        <div class="nombre">
+                            <label for="nombre"></label>
+                            <input id="nombre" type="text" name="nombre" placeholder="Tu nombre">
+                        </div>
+                            
+                        <div class="apellido">
+                            <label for="apellido"></label>
+                            <input id="apellido" type="text" name="apellido" placeholder="Tu apellido">
+                        </div>
+
+                        <div class="telefono">
+                            <label for="telefono"></label>
+                            <input id="telefono" type="number" name="telefono" placeholder="Tu telefono">
+                        </div>
+                            
+                        <div class="email">
+                            <label for="email"></label>
+                            <input id="email" type="email" name="email" placeholder="Tu email">
+                        </div>
+
+                        <div class="mensaje">
+                            <label for="mensaje"></label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu consulta"></textarea>
+                        </div>
+
+                        <div class="checkbox">
+                            ¿Queres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1">
+                        </div>
+
+                        <div class="contenedor__botonFormulario">
+                            <input class="boton__formulario" type="submit" value="Enviar">
+                            <input class="boton__formulario" type="reset" value="Borrar datos">
+                        </div>
+                    </form>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__logo" src="../img/logo.png" alt="LOGO">
+        <ul class="footer__lista">
+            <li><a href="https://es-la.facebook.com/"><img class="footer__facebook footer__redes" src="../img/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/?hl=es-la"><img class="footer__instagram footer__redes" src="../img/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=es"><img class="footer__whatsapp footer__redes" src="../img/whatsapp.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/"><img class="footer__youtube footer__redes" src="../img/youtube.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/feed/"><img class="footer__linkedin footer__redes"src="../img/linkedin.png" alt="linkedin"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
