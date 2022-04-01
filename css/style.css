@@ -53,10 +53,16 @@ ul{
 /* Header */
 .header__logo {
     height: 5rem;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
 }
 
 .header__nav{
     margin: auto 0 auto 0;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
 }
 
 .header__link{
@@ -207,6 +213,17 @@ ul{
     font-weight: 900;
     color: #eeeae5;
     text-align: center;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+@keyframes opacidad {
+    0%{ opacity: 0;
+        transform: scale(0,0);
+    }
+    100%{opacity: 1;
+        transform: scale(1,1);
+    }
 }
 
 @media screen and (min-width: 768px) {
