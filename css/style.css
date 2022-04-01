@@ -173,13 +173,16 @@ ul{
 
 /* contenedores */
 .contenedor, .main__menu {
-    background-color: #8d8c8c;
+    background-image: radial-gradient(#8d8c8c,rgb(78, 78, 78));
     padding: 5rem;
     margin: 2rem 1rem;
     border-radius: 1rem;
     box-shadow: 0px 11px 10px 1px rgb(0 0 0 / 63%);
     text-align: center;
     border: solid 2px black;
+    animation-name: opacidad_fondo;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,11 +202,18 @@ ul{
     background-image: url(/img/imagen_principal.jpg);
     background-position: center;
     background-size: cover;
+    animation-name: opacidad_fondo;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 .inicio__contenido {
     background-color: rgba(0, 0, 0, .5);
     padding: 10rem;
+}
+@keyframes opacidad_fondo{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .inicio__texto{
@@ -304,7 +314,6 @@ ul{
     }
 }
 
-
 /* Local */
 .imagen__local{
     width: 100%;
@@ -371,7 +380,7 @@ iframe{
 @media screen and (min-width: 768px) {
     .lugar--flex{
         padding: 2rem;
-        border: solid 2px #4e4e4e;
+        border: solid 2px #000;
         margin: 2rem;
     }
 
@@ -402,6 +411,9 @@ iframe{
     background-image: url(/img/cafeteria3.jpg);
     background-position: center center;
     background-size: cover;
+    animation-name: opacidad_fondo;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 .main__contenido{
@@ -529,6 +541,9 @@ tr:nth-child(even){
     width: 100%;
     margin: 1rem;
     align-items: center;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
 }
 
 .imagen__blog{
