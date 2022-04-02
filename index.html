@@ -16,11 +16,19 @@
 </head>
 <body>
     <header>
-        <a href="/">
-            <img class="header__logo" src="./img/logo.png" alt="LOGO">
-        </a>
+        
         <nav class="header__nav">
-            <ul>
+
+            <a href="/">
+                <img class="header__logo" src="./img/logo.png" alt="LOGO">
+            </a>
+
+            <label for="menu" class="nav__label">
+                <img src="assets/menu.svg" alt="menu_hamburguesa" class="nav__img">
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <ul class="nav__menu">
                 <li><a class="header__link" href="/">Inicio</a></li>
                 <li><a class="header__link" href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a class="header__link" href="./pages/menu.html">Menu</a></li>
