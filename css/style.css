@@ -452,7 +452,7 @@ iframe{
 /* Pagina nosotros */
 .main__nosotros{
     padding: 3rem;
-    background-image: url(/img/cafeteria3.jpg);
+    background-image: url(../img/cafeteria3.jpg);
     background-position: center center;
     background-size: cover;
     animation-name: opacidad_fondo;
