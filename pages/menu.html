@@ -4,198 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <title>Menu</title>
 </head>
-<body>
-    <header>
-        <nav class="header__nav">
-            <a href="../index.html">
-                <img class="header__logo" src="../img/logo.png" alt="LOGO">
-            </a>
-            
-            <label for="menu" class="nav__label">
-                <img src="../assets/menu.svg" alt="menu_hamburguesa" class="nav__img">
-            </label>
-            <input type="checkbox" id="menu" class="nav__input">
 
-            <ul class="nav__menu">
-                <li><a class="header__link" href="../index.html">Inicio</a></li>
-                <li><a class="header__link" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="header__link" href="../pages/menu.html">Menu</a></li>
-                <li><a class="header__link" href="../pages/blog.html">Blog</a></li>
-                <li><a class="header__link" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                  <img class="header__logo" src="../img/logo.png" alt="LOGO">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-white text-center justify-content-end  header__nav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="../pages/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="../pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded header__link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main__menu">
+    <main class="m-3 ps-0 pe-0 main__menu">
             
         <h1 class="h1__menu">Menu</h1>
 
-        <div class="main__menu--display">
-            <article class="contenedor__cafeteria">
-                <h2 class="h2__menu">Cafeteria</h2>
+        <div class="container">
 
-                    <div class="contenedor__listaCafe">
-                        <p class="p__cafe">Elegí el cafe que mas te guste y te lo preparamos</p>
-                        <ul class="lista__cafe">
-                            <li>Mogiana Sao Paulo - Brasil</li>
-                            <li>Sel de minas natural - Brasil</li>
-                            <li>Huehuetenango lavado - Guatemala</li>
-                            <li>Valle de cauca lavado - Colombia</li>
-                            <li>Guji natural - Etiopia</li>
-                        </ul>
+            <div class="row">
+                <div class="col contenedor__cafeteria">
+                    <h2 class="h2__menu">Cafeteria</h2>
+    
+                        <div class="contenedor__listaCafe">
+                            <p class="fs-4 ">Elegí el cafe que mas te guste y te lo preparamos</p>
+                            <ul class="fs-5 text-start lh-lg lista__cafe">
+                                <li>Mogiana Sao Paulo - Brasil</li>
+                                <li>Sel de minas natural - Brasil</li>
+                                <li>Huehuetenango lavado - Guatemala</li>
+                                <li>Valle de cauca lavado - Colombia</li>
+                                <li>Guji natural - Etiopia</li>
+                            </ul>
+                        </div>
+    
+                    <table cellpadding="6">
+                        <tr>
+                            <td>Ristretto</td>
+                            <td>Shot de 15ml de cafe espresso</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Esspreso</td>
+                            <td>Shot de 30ml de cafe espresso</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Esspreso doble</td>
+                            <td>Doble shot de espresso</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Lungo</td>
+                            <td>Esspreso de 90 ml</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Americano</td>
+                            <td>Esspreso de 30 ml con colchon de agua</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td>
+                            <td>Cafe con leche</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Capuccino</td>
+                            <td>Cafe con leche y canela</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Flat white</td>
+                            <td>Cafe esspreso simple o doble con fina capa de leche espumada</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Mocca</td>
+                            <td>Cafe con leche y chocolate</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Cold brew</td>
+                            <td>Cafe filtrado a temperatura ambiente durante 24 horas</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Cafe con nutella</td>
+                            <td>Cafe con leche, nutella y chocolate</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Cafe con dulce de leche</td>
+                            <td>Cafe con leche y dulce de leche</td>
+                            <td>$$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Cafe irlandes</td>
+                            <td>Cafe con whisky</td>
+                            <td>$$$$</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col d-flex flex-column">
+                    <div class="col contenedor__pasteleria">
+                        <h2 class="h2__menu">Pasteleria</h2>
+                        <table cellpadding="6">
+                            <tr>
+                                <td>Selva negra</td>
+                                <td>Bizcochuelo de chocolate embebido en kirsch e intercaladas con nata y cerezas</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Cheescake</td>
+                                <td>Puede ser de frutos rojos o maracuya</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Torta oreo</td>
+                                <td>Torta con galletas oreo, queso crema, crema de leche y bizcochuelo de chocolate</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Brownie</td>
+                                <td>Brownie con helado, dulce de leche y nueces</td>
+                                <td>$$$$</td>
+                            </tr>
+                        </table>
                     </div>
 
-                <table cellpadding="10">
-                    <tr>
-                        <td>Ristretto</td>
-                        <td>Shot de 15ml de cafe espresso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Esspreso</td>
-                        <td>Shot de 30ml de cafe espresso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Esspreso doble</td>
-                        <td>Doble shot de espresso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Lungo</td>
-                        <td>Esspreso de 90 ml</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Americano</td>
-                        <td>Esspreso de 30 ml con colchon de agua</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Latte</td>
-                        <td>Cafe con leche</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Capuccino</td>
-                        <td>Cafe con leche y canela</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Flat white</td>
-                        <td>Cafe esspreso simple o doble con fina capa de leche espumada</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Mocca</td>
-                        <td>Cafe con leche y chocolate</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Cold brew</td>
-                        <td>Cafe filtrado a temperatura ambiente durante 24 horas</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Cafe con nutella</td>
-                        <td>Cafe con leche, nutella y chocolate</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Cafe con dulce de leche</td>
-                        <td>Cafe con leche y dulce de leche</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Cafe irlandes</td>
-                        <td>Cafe con whisky</td>
-                        <td>$$$$</td>
-                    </tr>
-                </table>
-            </article>
-    
-            <article class="contenedor__pasteleria">
-                <h2 class="h2__menu">Pasteleria</h2>
-                <table cellpadding="10">
-                    <tr>
-                        <td>Selva negra</td>
-                        <td>Bizcochuelo de chocolate embebido en kirsch e intercaladas con nata y cerezas</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Cheescake</td>
-                        <td>Puede ser de frutos rojos o maracuya</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Torta oreo</td>
-                        <td>Torta con galletas oreo, queso crema, crema de leche y bizcochuelo de chocolate</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Brownie</td>
-                        <td>Brownie con helado, dulce de leche y nueces</td>
-                        <td>$$$$</td>
-                    </tr>
-                </table>
-            </article>
-    
-            <article class="contenedor__salado">
-                <h2 class="h2__menu">Salado</h2>
-                <table  cellpadding="10">
-                    <tr>
-                        <td>Tostado de jamon y queso</td>
-                        <td>Pan de miga tostado con fetas de jamon y queso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Arabe de jamon y queso</td>
-                        <td>Pan arabe tostado con fetas de jamon y queso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Arabe jamon, queso y tomate</td>
-                        <td>Pan arabe tostado con fetas de jamon, queso y rodajas de tomate</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Avocado</td>
-                        <td>Pan tostado con palta y huevo poche</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Tostadas con huevo</td>
-                        <td>Tostada con huevo revuelto</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Tostadas con queso y mermeladas</td>
-                        <td>Mermelada de frutos rojos / frutilla / durazno</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Medialuna con jamon y queso</td>
-                        <td>2 medialiunas con fetas de jamon y queso</td>
-                        <td>$$$$</td>
-                    </tr>
-                    <tr>
-                        <td>Croissant avocado</td>
-                        <td>Medialuna con queso crema, palta y huevo poche</td>
-                        <td>$$$$</td>
-                    </tr>
-                </table>
-            </article>
-    
-            <article class="contenedor__bebidas">
+                    <div class="contenedor__salado">
+                        <h2 class="h2__menu">Salado</h2>
+                        <table  cellpadding="6">
+                            <tr>
+                                <td>Tostado de jamon y queso</td>
+                                <td>Pan de miga tostado con fetas de jamon y queso</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Arabe de jamon y queso</td>
+                                <td>Pan arabe tostado con fetas de jamon y queso</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Arabe jamon, queso y tomate</td>
+                                <td>Pan arabe tostado con fetas de jamon, queso y rodajas de tomate</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Avocado</td>
+                                <td>Pan tostado con palta y huevo poche</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Tostadas con huevo</td>
+                                <td>Tostada con huevo revuelto</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Tostadas con queso y mermeladas</td>
+                                <td>Mermelada de frutos rojos / frutilla / durazno</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Medialuna con jamon y queso</td>
+                                <td>2 medialiunas con fetas de jamon y queso</td>
+                                <td>$$$$</td>
+                            </tr>
+                            <tr>
+                                <td>Croissant avocado</td>
+                                <td>Medialuna con queso crema, palta y huevo poche</td>
+                                <td>$$$$</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="contenedor__bebidas">
                 <h2 class="h2__menu">Bebidas</h2>
-                <table cellpadding="10">
+                <table cellpadding="6">
                     <tr>
                         <td>Agua con o sin gas</td>
                         <td>Agua de 500 ml </td>
@@ -232,7 +253,7 @@
                         <td>$$$$</td>
                     </tr>
                 </table>
-            </article>
+            </div>
         </div>
     </main>
 
@@ -246,5 +267,7 @@
             <li><a href="https://www.linkedin.com/feed/"><img class="footer__linkedin footer__redes"src="../img/linkedin.png" alt="linkedin"></a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

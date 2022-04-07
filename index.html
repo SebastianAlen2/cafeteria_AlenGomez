@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Condor cafe</title>
 </head>
 <body>
-    <header>
-        
-        <nav class="header__nav">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                  <img class="header__logo" src="./img/logo.png" alt="LOGO">
+                </a>
 
-            <a href="./index.html">
-                <img class="header__logo" src="./img/logo.png" alt="LOGO">
-            </a>
-
-            <label for="menu" class="nav__label">
-                <img src="assets/menu.svg" alt="menu_hamburguesa" class="nav__img">
-            </label>
-            <input type="checkbox" id="menu" class="nav__input">
-
-            <ul class="nav__menu">
-                <li><a class="header__link" href="./index.html">Inicio</a></li>
-                <li><a class="header__link" href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a class="header__link" href="./pages/menu.html">Menu</a></li>
-                <li><a class="header__link" href="./pages/blog.html">Blog</a></li>
-                <li><a class="header__link" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-white text-center justify-content-end  header__nav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="./pages/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-white rounded header__link" href="./pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded header__link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <article class="inicio">
+        <article class="inicio ">
             <div class="inicio__contenido">
                 <h1 class="inicio__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             </div>
@@ -44,74 +57,77 @@
         
         <article class="contenedor">
             <h2 class="local__titulo">Nuestro local</h2>
-            <p class="local__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quisquam?</p>
+            <p class="mb-5 local__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quisquam?</p>
             <div class="local__imagenes">
-                <img class="imagen__local"  src="./img/cafeteria1.jpg" alt="Imagen 1">
-                <img class="imagen__local"  src="./img/cafeteria2.jpg" alt="Imagen 2">
-                <img class="imagen__local"  src="./img/cafeteria3.jpg" alt="Imagen 3">
-                <img class="imagen__local"  src="./img/cafeteria4.jpg" alt="Imagen 4">
-                <img class="imagen__local"  src="./img/cafeteria5.jpg" alt="Imagen 5">
-                <img class="imagen__local"  src="./img/cafeteria6.jpg" alt="Imagen 6">
+                    <img class="imagen__local"  src="./img/cafeteria1.jpg" alt="Imagen 1">
+                    <img class="imagen__local"  src="./img/cafeteria2.jpg" alt="Imagen 2">
+                    <img class="imagen__local"  src="./img/cafeteria3.jpg" alt="Imagen 3">
+                    <img class="imagen__local"  src="./img/cafeteria4.jpg" alt="Imagen 4">
+                    <img class="imagen__local"  src="./img/cafeteria5.jpg" alt="Imagen 5">
+                    <img class="imagen__local"  src="./img/cafeteria6.jpg" alt="Imagen 6">
             </div>
         </article>
     
         <article class="contenedor">
             <div>
                 <h2 class="filtrados__titulo">Filtrados</h2>
-                <p class="filtrados__texto">Los filtrados con los que trabajamos</p>
+                <p class="mb-5 filtrados__texto">Los filtrados con los que trabajamos</p>
             </div>
 
-            <div class="filtrados__cafeteras">
-                <div class="chemex">
-                    <h3 class="cafeteras__titulo">Chemex</h3>
-                    <img class="cafetera__imagen" src="./img/chemex.png" alt="chemex">
+            <div class="container filtrados__cafeteras">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+                    <div class="col chemex">
+                        <h3 class="cafeteras__titulo">Chemex</h3>
+                        <img class="cafetera__imagen" src="./img/chemex.png" alt="chemex">
+                    </div>
+                    
+                    <div class="col v60">
+                        <h3 class=" cafeteras__titulo">V60</h3>
+                        <img height="100" class="cafetera__imagen" src="./img/v60.png" alt="v60">
+                    </div>
+                        
+                    <div class="col francesa">
+                        <h3 class="cafeteras__titulo">Prensa francesa</h4>
+                        <img class="cafetera__imagen" src="./img/prensa francesa.png" alt="prensa francesa">
+                    </div>
+                        
+                    <div class="col italiana">
+                        <h3 class="cafeteras__titulo">Cafetera italiana</h3>
+                        <img class="cafetera__imagen" src="./img/cafetera_italiana.png" alt="cafetera italiana">
+                    </div>
+        
+                    <div class="col aeropress">
+                        <h3 class="cafeteras__titulo">Aeropress</h3>
+                        <img class="cafetera__imagen" height="200" src="./img/aeropress.png" alt="aeropress">
+                    </div>
+                    
+                    <div class="col sifon">
+                        <h3 class="cafeteras__titulo">Sifón</h3>
+                        <img class="cafetera__imagen" height="200" src="./img/sifon.png" alt="sifon">
+                    </div>
                 </div>
                 
-                <div class="v60">
-                    <h3 class="cafeteras__titulo">V60</h3>
-                    <img height="200" class="cafetera__imagen" src="./img/v60.png" alt="v60">
-                </div>
-                    
-                <div class="francesa">
-                    <h3 class="cafeteras__titulo">Prensa francesa</h4>
-                    <img class="cafetera__imagen" src="./img/prensa francesa.png" alt="prensa francesa">
-                </div>
-                    
-                <div class="italiana">
-                    <h3 class="cafeteras__titulo">Cafetera italiana</h3>
-                    <img class="cafetera__imagen" src="./img/cafetera_italiana.png" alt="cafetera italiana">
-                </div>
-    
-                <div class="aeropress">
-                    <h3 class="cafeteras__titulo">Aeropress</h3>
-                    <img class="cafetera__imagen" height="200" src="./img/aeropress.png" alt="aeropress">
-                </div>
-                
-                <div class="sifon">
-                    <h3 class="cafeteras__titulo">Sifón</h3>
-                    <img class="cafetera__imagen" height="200" src="./img/sifon.png" alt="sifon">
-                </div>
             </div>
             
         </article>
     
         <article class="contenedor">
-            <h2 class="lugar__titulo">¿Donde estamos?</h2>
+            <h2 class=" lugar__titulo">¿Donde estamos?</h2>
             <div class="lugar--flex">
                 <div class="lugar__texto">
-                    <h3 class="lugar__subtitulo">Ubicacion:</h3>
+                    <h3 class="fw-bold lugar__subtitulo">Ubicacion:</h3>
                     <p class="lugar__subtexto">Humboldt 1234, Palermo - C.A.B.A.</p>
 
-                    <h3 class="lugar__subtitulo">Horarios de atencion:</h3>
+                    <h3 class="fw-bold lugar__subtitulo">Horarios de atencion:</h3>
                     <p class="lugar__subtexto">Lunes a Viernes de 9 a 20, Sabados de 10 a 21</p>
 
-                    <h3 class="lugar__subtitulo">Telefono:</h3>
+                    <h3 class="fw-bold lugar__subtitulo">Telefono:</h3>
                     <p class="lugar__subtexto">1234-5678</p>
 
-                    <h3 class="lugar__subtitulo">Whatsapp:</h3>
+                    <h3 class="fw-bold lugar__subtitulo">Whatsapp:</h3>
                     <p class="lugar__subtexto">1234-567890</p>
 
-                    <h3 class="lugar__subtitulo">Email:</h3>
+                    <h3 class="fw-bold lugar__subtitulo">Email:</h3>
                     <p class="lugar__subtexto">correo@correo.com</p>
                 </div>
 
@@ -132,5 +148,7 @@
             <li><a href="https://www.linkedin.com/feed/"><img class="footer__linkedin footer__redes"src="./img/linkedin.png" alt="linkedin"></a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
