@@ -1,0 +1,44 @@
+/* HEADER */
+header {
+    background-color: $negro;
+    z-index: 1;
+    box-shadow: $sombra-contenedores;    
+    padding: 0 5rem;
+}
+
+.navbar-toggler{
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+
+.header__logo {
+    height: 7rem;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav{
+        animation-name: opacidad;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+    }
+}
+
+.header__link {
+    font-size: 2rem;
+    font-weight: $fuente-bold;
+
+    &:hover{
+        background-color: $blanco;
+        color: $negro !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        height: 9rem;
+    }
+}

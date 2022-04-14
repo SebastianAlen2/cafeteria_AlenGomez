@@ -1,0 +1,84 @@
+/* PAGINA CONTACTO */
+.main__contacto--display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__contacto--display{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+}
+
+.mapa__ubicacion{
+    height: auto;
+    width: 25rem;       
+}
+
+@media screen and (min-width: 360px) {
+    .mapa__ubicacion{
+        height: 25rem;
+        width: auto;
+    }
+}
+
+/*Ubicacion */
+.article__ubicacion{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: left;
+    line-height: $interlineado;
+
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article__ubicacion{
+        position: relative;
+        left: 2rem;
+    }
+}
+
+.h3__ubicacion{
+    font-size: $fuente-mediana;
+}
+
+.p__ubicacion{
+    font-size: $fuente-chica;
+    font-weight: $fuente-light;
+    line-height: $interlineado;
+}
+
+.footer__redes--filter{
+    filter: invert(1);
+    padding: 0 1rem;
+}
+
+/* Formulario */
+.contenedor__formulario{
+    border: $borde-contenedores;
+    border-radius: $borde-redondeado;
+    background-color: $color-formulario;
+}
+
+input[type='text'],[type='number'],[type='email'], textarea{
+    background: $sin-estilo;
+    border: $sin-estilo;
+    border-bottom: $borde-contenedores;
+    margin-bottom: 2rem;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}

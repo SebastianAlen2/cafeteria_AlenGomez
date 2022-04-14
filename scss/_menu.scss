@@ -1,0 +1,36 @@
+/* PAGINA MENU */
+@media screen and (min-width: 768px) {
+    .contenedor__listaCafe{
+        border: $borde-contenedorClaro;
+        border-radius: $borde-redondeado;
+        padding: 1rem;
+    }
+}
+
+.lista__cafe{
+    display: inline-block;
+    list-style-type: circle;
+}
+
+table{
+    margin: 1rem 0;
+    background-color: $color-tablaPrincipal;
+    font-size: $fuente-chica;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: $borde-redondeado;
+    box-shadow: $sombra-contenedores;
+    text-align: left;
+}
+
+td{
+    border-radius: $borde-redondeado;
+}
+
+tr:nth-child(even){
+    background-color: $color-tablaSecundario;
+}
+
+.p__cafe{
+    font-size: $fuente-chica;
+}

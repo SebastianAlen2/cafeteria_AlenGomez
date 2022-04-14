@@ -1,0 +1,14 @@
+/* PAGINA NOSOTROS */
+.main__nosotros{
+    padding: 3rem;
+    background-image: url(../img/cafeteria3.jpg);
+    background-position: center center;
+    background-size: cover;
+    animation-name: opacidad_fondo;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.main__contenido{
+    backdrop-filter: blur(5px);
+}

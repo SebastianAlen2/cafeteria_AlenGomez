@@ -1,0 +1,31 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-image: $gradiente;
+}
+
+h1{
+    text-transform: $mayuscula;
+    font-weight: $fuente-bolder;
+}
+
+h2{
+    font-weight: $fuente-bold;
+    font-style: $fuente-italic;
+}
+
+a {
+    text-decoration: $sin-estilo;
+}
+
+ul{
+    list-style-type: $sin-estilo;
+}
+
+.h2__formulario, .h2__menu{
+    margin-top: 3rem;
+    font-size: 2rem;
+}

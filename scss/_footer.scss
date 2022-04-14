@@ -1,0 +1,59 @@
+/* FOOTER */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $negro;
+    padding: 0 1rem;
+}
+
+.footer__logo {
+    height: 5rem;
+}
+
+.footer__lista{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer__redes{
+    filter: invert(.8);
+    padding: 0 1rem;
+}
+
+.footer__facebook{
+    height: 2.5rem;
+}
+
+.footer__instagram{
+    height: 2rem;
+}
+
+.footer__whatsapp{
+    height: 3rem;
+}
+
+.footer__youtube{
+    height: 2.5rem;
+}
+
+.footer__linkedin{
+    height: 2.5rem;
+} 
+
+@media screen and (min-width: 768px) {
+    .footer{
+        padding: 0 5rem;
+    }
+
+    .footer__logo {
+        height: 7rem;
+    }
+    
+    .footer__lista{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+}

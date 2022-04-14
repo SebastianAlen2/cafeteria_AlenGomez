@@ -1,0 +1,112 @@
+/* PAGINA BLOG */
+.div__blog{
+    display: flex;
+    flex-direction: column;
+    background-color: $blanco;
+    border-radius: 1rem;
+    box-shadow: $sombra-contenedores;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: content-box;
+    width: 100%;
+    margin: 1rem -2rem;
+    align-items: center;
+    animation-name: opacidad;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+}
+
+.imagen__blog{
+    width: 95%;
+    height: auto;
+    margin: 1rem;
+    border-radius: $borde-redondeado;
+}
+
+.titulo__blog{
+    font-size: $fuente-mediana;
+}
+
+.texto__blog{
+    font-size: 1rem;
+    box-sizing: content-box;
+    margin-bottom: 2rem;
+}
+
+.boton__blog{
+    font-size: $fuente-chica;
+    text-transform: $mayuscula;
+    background-color: $negro;
+    color: $blanco;
+    border: $sin-estilo;
+    border-radius: $borde-redondeado;
+    position: relative;
+    right: 20px;
+    margin: 0 2rem;
+    height: 4rem;
+    width: 100%;
+    transition-duration: .3s;
+
+    &:hover{
+        border: $borde-botones;
+        color: $negro;
+        background-color: $blanco;
+        cursor: pointer;
+        transition-duration: .3s;
+    }
+}
+
+.contenedor__textoBlog{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    .div__blog{
+        flex-direction: row;
+        background-color: $blanco;
+        border-radius: 1rem;
+        box-shadow: $borde-contenedores;
+        text-align: center;
+        padding: 1rem;
+        box-sizing: content-box;
+        width: 100%;
+        margin: 2rem 0;
+        align-items: center;
+    }
+    .imagen__blog{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .div__blog{
+        width: 95%;
+        padding: 0;
+        overflow: hidden;
+    }
+    .article__blog{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .titulo__blog{
+        margin: 0;
+        font-size: $fuente-chica;
+    }
+    
+    .texto__blog{
+        font-size: 1rem;
+        box-sizing: content-box;
+    }
+
+    .imagen__blog{
+        width: 50%;
+        height: 190px;
+        margin: 0;
+        border-radius: 0;
+    }
+}
