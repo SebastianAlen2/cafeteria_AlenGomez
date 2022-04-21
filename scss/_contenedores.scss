@@ -1,5 +1,5 @@
 /* CONTENEDORES */
-.contenedor, .main__menu {
+.contenedor {
     background-image: radial-gradient($color-principal,#3d3d3d);
     padding: 5rem;
     margin: 2rem 1rem;
@@ -12,8 +12,19 @@
     animation-delay: 0s;
 }
 
+.main__menu{
+    @extend .contenedor;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media screen and (min-width: 768px) {
     .contenedor, .main__menu {
         margin: 5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .main__menu{
+        padding: 5rem;
     } 
 }

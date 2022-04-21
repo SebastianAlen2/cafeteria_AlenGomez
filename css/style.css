@@ -131,9 +131,17 @@ header {
   animation-duration: 3s;
   animation-delay: 0s; }
 
+.main__menu {
+  padding-left: 0;
+  padding-right: 0; }
+
 @media screen and (min-width: 768px) {
-  .contenedor, .main__menu {
+  .contenedor, .main__menu, .main__menu {
     margin: 5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .main__menu {
+    padding: 5rem; } }
 
 /* PAGINA INICIO */
 /* Imagen y texto inicio */
@@ -208,6 +216,7 @@ header {
 .imagen__local {
   padding: 0;
   width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   transition-duration: .3s; }
   .imagen__local:hover {
@@ -218,6 +227,7 @@ header {
 /* Cafeteras */
 .cafetera__imagen {
   margin-bottom: 2rem;
+  width: auto;
   height: 10rem;
   filter: invert(0.15);
   z-index: 0; }
@@ -230,6 +240,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .cafetera__imagen {
+    width: auto;
     height: 15rem; }
   .cafeteras__titulo {
     font-size: 2rem; } }

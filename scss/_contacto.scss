@@ -1,3 +1,5 @@
+@import "variables";
+
 /* PAGINA CONTACTO */
 .main__contacto--display{
     display: flex;
@@ -54,7 +56,7 @@
 
 .p__ubicacion{
     font-size: $fuente-chica;
-    font-weight: $fuente-light;
+    font-weight: map-get($font-weight, fuente-light);
     line-height: $interlineado;
 }
 

@@ -1,7 +1,5 @@
 $fuente-principal: 'montserrat', sans-serif;
-$fuente-light: 400;
-$fuente-bold: 700;
-$fuente-bolder: 900;
+$font-weight: (fuente-light: 400, fuente-bold: 700, fuente-bolder: 900);
 $fuente-italic: italic;
 $fuente-grande: 5rem;
 $fuente-mediana: 2rem;
@@ -23,3 +21,8 @@ $borde-botones: solid 1px #000;
 $borde-redondeado: .5rem;
 $borde-masRedondeado: 1rem;
 $blanco: #fff;
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}

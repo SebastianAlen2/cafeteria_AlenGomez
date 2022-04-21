@@ -1,3 +1,5 @@
+@import "variables";
+
 /* PAGINA INICIO */
 /* Imagen y texto inicio */
 .inicio {
@@ -18,7 +20,7 @@
     text-transform: $sin-estilo;
     font-style: $fuente-italic;
     font-size: $fuente-mediana;
-    font-weight: $fuente-bolder;
+    font-weight: map-get($font-weight, fuente-bolder);
     color: $blanco;
     text-align: center;
     animation-name: opacidad;
@@ -42,21 +44,21 @@
 .local__titulo, .filtrados__titulo, .lugar__titulo{
     font-style: $fuente-italic;
     font-size: $fuente-mediana;
-    font-weight: $fuente-bolder;
+    font-weight: map-get($font-weight, fuente-bolder);
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .local__titulo, .filtrados__titulo, .lugar__titulo{
         font-size: 4rem;
-        font-weight: $fuente-bold;
+        font-weight: map-get($font-weight, fuente-bold);
     }
 }
 
 /* Textos articulos */
 .local__texto, .filtrados__texto{
     font-size: $fuente-chica;
-    font-weight: $fuente-light;
+    font-weight: map-get($font-weight, fuente-light);
 }
 @media screen and (min-width: 768px) {
     .local__texto, .filtrados__texto{
@@ -89,7 +91,7 @@
 /* Local */
 .imagen__local{
     padding: 0;
-    width: 100%;
+    @include sizes(100%, auto);
     border-radius: $borde-redondeado;
     transition-duration: .3s;
 
@@ -103,7 +105,7 @@
 /* Cafeteras */
 .cafetera__imagen{
     margin-bottom: 2rem;
-    height: 10rem;
+    @include sizes(auto, 10rem);
     filter: invert(.15);
     z-index: 0;
 }
@@ -111,13 +113,13 @@
 .cafeteras__titulo{
     font-size: $fuente-chica;
     font-style: $fuente-italic;
-    font-weight: $fuente-bolder;
+    font-weight: map-get($font-weight, fuente-bolder);
     text-transform: $mayuscula;
 }
 
 @media screen and (min-width: 768px){
     .cafetera__imagen{
-        height: 15rem;
+        @include sizes(auto, 15rem);
     }
     .cafeteras__titulo{
         font-size: $fuente-mediana;
@@ -132,8 +134,7 @@
 
 iframe{
     border-radius: $borde-redondeado;
-    width: 30rem;
-    height: 25rem;
+    @include sizes(30rem, 25rem);
 }
 
 .lugar--flex{
@@ -163,8 +164,7 @@ iframe{
     }
 
     iframe{
-        width: 35rem;
-        height: 30rem;
+        @include sizes(35rem, 30rem);
     }
 }
 
