@@ -1,7 +1,7 @@
 {
   "name": "cafeteria_alengomez",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina web de una cafeteria de especialidad",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
