@@ -52,7 +52,7 @@
 
     <main class="p-4 contenedor">
 
-            <h1 class="h1__contacto">Contactanos</h1>
+        <h1 class="h1__contacto">Contactanos</h1>
 
         <div class="main__contacto--display">
             <article class="article__ubicacion">
@@ -90,11 +90,12 @@
                     <h2 class="mt-0 h2__formulario">Dejanos tu consulta</h2>
                     
                     <form class="p-3" action="#" method="get" enctype="application/x-www-form-urlencoded">
+
                         <div class="row g-2">
                             <div class="col-md">
                                 <div class="mt-3 mb-3 text-start">
                                     <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control fs-4" id="nombre" placeholder="Tu nombre">
+                                    <input type="text" class="form-control fs-4" id="nombre" placeholder="Tu nombre" name="nombre">
                                     
                                 </div>
                             </div>
@@ -102,29 +103,28 @@
                             <div class="col-md">
                                 <div class="mt-3 mb-3 text-start">
                                     <label for="apellido" class="form-label">Apellido/s</label>
-                                    <input type="text" class="form-control fs-4" id="apellido" placeholder="Tu apellido">
-                                    
+                                    <input type="text" class="form-control fs-4" id="apellido" placeholder="Tu apellido" name="appelido"> 
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mb-3 text-start">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control fs-4" id="email" placeholder="correo@correo.com">
+                            <input type="email" class="form-control fs-4" id="email" placeholder="correo@correo.com" name="email">
                         </div>
 
                         <div class="mb-3 text-start">
                             <label for="telefono" class="form-label">Telefono</label>
-                            <input type="email" class="form-control fs-4" id="telefono" placeholder="(011) 1234-5678">
+                            <input type="email" class="form-control fs-4" id="telefono" placeholder="(011) 1234-5678" name="telefono">
                         </div>
 
                         <div class="mb-3 text-start">
                             <label for="textarea" class="form-label">Dejanos tu consulta</label>
-                            <textarea class="form-control" id="textarea" rows="5"></textarea>
+                            <textarea class="form-control" id="textarea" rows="5" name="textarea"></textarea>
                         </div>
 
                         <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox">
                           <label class="form-check-label" for="exampleCheck1">¿Queres recibir info sobre nosotros?</label>
                         </div>
 
